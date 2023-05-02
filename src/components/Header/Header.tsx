@@ -19,7 +19,7 @@ import { AnyPtrRecord } from "dns";
 interface HeaderProps{}
 
 const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
 
 
 const Header: FC<HeaderProps> = ({}) => {
@@ -50,7 +50,6 @@ const Header: FC<HeaderProps> = ({}) => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -66,7 +65,7 @@ const Header: FC<HeaderProps> = ({}) => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            DATA
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
